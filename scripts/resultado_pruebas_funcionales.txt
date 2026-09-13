@@ -1,0 +1,37 @@
+A) Umbrales de semáforo (valores límite)
+
+  [OK]   Inasistencia 10.00% = Verde
+  [OK]   Inasistencia 10.01% = Amarillo
+  [OK]   Inasistencia 20.00% = Amarillo
+  [OK]   Inasistencia 20.01% = Rojo
+  [OK]   Espera 15 min = Verde
+  [OK]   Espera 15.01 min = Amarillo
+  [OK]   Espera 30.01 min = Rojo
+  [OK]   Ocupación 85.00% = Verde
+  [OK]   Ocupación 84.99% = Amarillo
+  [OK]   Ocupación 69.99% = Rojo
+  [OK]   Stock crítico 0 = Verde
+  [OK]   Stock crítico 5 = Amarillo
+  [OK]   Stock crítico 6 = Rojo
+  [OK]   Quiebres 3 = Amarillo
+  [OK]   Quiebres 4 = Rojo
+
+B) Filtros combinados y casos límite
+
+  [OK]   Área de otro sector + sector=1 -> 0 evaluables (sin error)
+  [OK]   id_area inexistente (9999) -> 0 sin error
+  [OK]   Rango de fechas sin datos -> tasa 0.00 sin división por cero
+  [OK]   Ocupación sin datos en el rango -> 0% sin división por cero
+  [OK]   Rango de fechas invertido -> 0 resultados sin error
+  [OK]   Todos los filtros NULL -> agrega todo el histórico sin error
+
+C) Integridad de datos (RNF-04)
+
+  [OK]   Todo bloque 'Reservado' tiene una cita asociada
+  [OK]   Toda cita apunta a un bloque en estado 'Reservado'
+  [OK]   Toda cita 'Inasistente' registra motivo
+  [OK]   Ningún insumo con stock negativo
+
+==================================================
+TOTAL: 25 OK / 0 FALLAS
+==================================================

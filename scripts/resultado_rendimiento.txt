@@ -1,0 +1,16 @@
+Tiempo de conexión inicial: 1665 ms (una sola vez por sesión, no por consulta)
+
+Consulta                                        min     prom      max   veredicto
+----------------------------------------------------------------------------------
+SP1 inasistencia (sin filtros)               149.4    195.0    238.4   OK
+SP1 inasistencia (+ área)                    144.9    169.2    229.5   OK
+SP1 inasistencia (+ sector)                  150.5    164.2    197.7   OK
+SP2 tiempo de espera (sin filtros)           156.6    240.0    365.1   OK
+SP3 ocupación de agenda (sin filtros)        148.3    204.8    261.8   OK
+SP4 stock crítico                            144.0    231.4    349.4   OK
+SP5 quiebres de stock                        141.4    205.5    278.3   OK
+Tendencia (historial_kpi, gráfico)           142.2    204.9    367.9   OK
+Detalle de inventario (tabla RF-04)          144.6    167.1    230.2   OK
+----------------------------------------------------------------------------------
+Umbral RNF-01: 1500 ms | Peor caso observado: 367.9 ms
+RESULTADO GLOBAL: CUMPLE RNF-01
